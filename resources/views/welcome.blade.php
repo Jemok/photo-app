@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="container">
-        <a href='http://localhost:8000/collection-link/ec473450-bd6c-11e8-a5f5-c7bd9810f1d3/124' style='background-color: #4CAF50; border: none; color: white; padding: 5px 10px; text-align: center; text-decoration: none; display: inline-block;'><img src='http://localhost:8000/images/mpesa-logo.png'> Click to Pay Testing Button</a>            <div class="carousel-inner">
+        <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="{{ asset('img/slider-1.png') }}" alt="Landing Image">
                 </div>
