@@ -18,9 +18,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('assets')
 </head>
-<body>
+<body style="background-color: black;">
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: black;">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="{{ asset('img/logo-1.png') }}"  height="30">
@@ -47,22 +47,22 @@
                     {{--</li>--}}
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('indexAbout') }}" style="color: black;">
+                        <a class="nav-link" href="{{ route('indexAbout') }}" style="color: white;">
                             About Us
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('indexGallery') }}" style="color: black;">
+                        <a class="nav-link" href="{{ route('indexGallery') }}" style="color: white;">
                             Social
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('indexShop') }}" style="color: black;">
+                        <a class="nav-link" href="{{ route('indexShop') }}" style="color: white;">
                             Shop
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('indexEvents') }}" style="color: black;">
+                        <a class="nav-link" href="{{ route('indexEvents') }}" style="color: white;">
                             Events
                         </a>
                     </li>
@@ -89,12 +89,12 @@
             </div>
         </div>
     </nav>
-
     <main class="py-4">
         @yield('content')
     </main>
 </div>
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 @stack('scripts')
 </body>
 </html>
